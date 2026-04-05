@@ -362,7 +362,7 @@ pip install pydepm
 ### Development
 
 ```bash
-git clone https://github.com/your-repo/pydepm.git
+git clone https://github.com/ZtaMDev/pydepm.git
 cd pydepm
 pip install -e .
 ```
@@ -389,7 +389,7 @@ python scripts/quick_validation.py
 
 ## 🤝 Contributing
 
-Contributions welcome! See [Contributing Guide](docs/CONTRIBUTING.md).
+Contributions welcome! See [Contributing Guide](CONTRIBUTING.md).
 
 ---
 

@@ -54,7 +54,7 @@ We welcome contributions in several areas:
 
 ```bash
 # Fork on GitHub, then:
-git clone https://github.com/ZMDev/pydepm.git
+git clone https://github.com/ZtaMDev/pydepm.git
 cd pydepm
 ```
 
@@ -169,22 +169,6 @@ pydepm/
 ---
 
 ## Testing
-
-### Running Tests
-
-```bash
-# Run all tests
-pydep run test
-
-# Run specific test file
-pytest tests/unit/test_resolver.py -v
-
-# Run with coverage
-pytest tests/ --cov=src --cov-report=html
-
-# Run tests in watch mode
-pydep run test-watch
-```
 
 ### Writing Tests
 
@@ -585,8 +569,8 @@ pydep run docs
 
 ## Questions?
 
-- Check existing [issues](https://github.com/yourusername/pydepm/issues)
-- Ask in [discussions](https://github.com/yourusername/pydepm/discussions)
+- Check existing [issues](https://github.com/ZtaMDev/pydepm/issues)
+- Ask in [discussions](https://github.com/ZtaMDev/pydepm/discussions)
 - Read the [documentation](docs/)
 - Review [architecture](docs/ARCHITECTURE.md)
 

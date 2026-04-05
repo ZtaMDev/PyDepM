@@ -310,8 +310,8 @@ A: PyDepm requires Python 3.11+. Older versions aren't supported.
 
 ## 📞 Support
 
-- **Issues:** Report bugs on [GitHub Issues](https://github.com/yourusername/pydepm/issues)
-- **Discussions:** Ask questions on [GitHub Discussions](https://github.com/yourusername/pydepm/discussions)
+- **Issues:** Report bugs on [GitHub Issues](https://github.com/ZtaMDev/pydepm/issues)
+- **Discussions:** Ask questions on [GitHub Discussions](https://github.com/ZtaMDev/pydepm/discussions)
 - **Documentation:** You're reading it! Check the index above
 - **Contributing:** See CONTRIBUTING.md in the root
 
