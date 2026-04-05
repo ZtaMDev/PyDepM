@@ -1,0 +1,341 @@
+Metadata-Version: 2.4
+Name: pydepm
+Version: 1.0.0
+Summary: Modern Python dependency and project manager with custom resolver, lock files, and comprehensive tooling (pydep CLI).
+Author-email: ZMDev <ztadevs@gmail.com>
+Maintainer-email: ZMDev <ztadevs@gmail.com>
+License: MIT
+Keywords: dependencies,packaging,cli,pyinstaller,poetry,pypi,resolver,lock-files
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: System :: Software Distribution
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: typer>=0.9
+Requires-Dist: rich>=13.0
+Requires-Dist: build>=1.0
+Requires-Dist: packaging>=23.0
+Requires-Dist: requests>=2.31
+Requires-Dist: tomlkit>=0.12
+Requires-Dist: questionary>=2.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0; extra == "dev"
+Requires-Dist: black>=23.0; extra == "dev"
+Requires-Dist: ruff>=0.1; extra == "dev"
+Requires-Dist: mypy>=1.0; extra == "dev"
+Requires-Dist: isort>=5.12; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest>=7.0; extra == "test"
+Requires-Dist: pytest-cov>=4.0; extra == "test"
+Requires-Dist: pytest-mock>=3.10; extra == "test"
+Requires-Dist: pytest-asyncio>=0.21; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx>=6.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=1.2; extra == "docs"
+Requires-Dist: myst-parser>=1.0; extra == "docs"
+
+# PyDepm - Python Dependencies & Projects Manager
+
+Simple, fast, and modern Python project manager. Initialize projects, manage dependencies, build distributions, and publish to PyPI—all from one command.
+
+---
+
+## Features
+
+- **Initialize Projects** — Create modules or apps with automatic environment setup
+- **Manage Dependencies** — Add, remove, update, with dev and optional groups
+- **Lock Files** — Generate `pydepm.lock` for reproducible builds (TOML/JSON)
+- **Install** — Install dependencies, dev-dependencies, and optional groups
+- **Build** — Create wheels, sdist, or PyInstaller apps
+- **Audit** — Check for dependency issues and security vulnerabilities
+- **Publish** — Upload to PyPI or TestPyPI with automated token management
+- **Custom Scripts** — Define and run scripts from `pyproject.toml`
+- **Beautiful CLI** — Progress bars, colors, interactive prompts
+
+---
+
+## 🚀 Quick Start
+
+### 1. Install
+
+```bash
+pip install pydepm
+```
+
+### 2. Create a Project
+
+```bash
+pydep init my_project --type module --env venv
+cd my_project
+```
+
+### 3. Add Dependencies
+
+```bash
+pydep add requests              # Add to project
+pydep add -D pytest             # Add to dev (-D = --save-dev)
+pydep add -G docs sphinx        # Add to group (-G = --group)
+```
+
+### 4. Install & Lock
+
+```bash
+pydep install                   # Install all
+pydep lock                      # Create lock file
+```
+
+### 5. Build & Publish
+
+```bash
+pydep build                     # Create distributions
+pydep publish                   # Upload to PyPI
+```
+
+---
+
+## All Commands
+
+| Command                       | Purpose            |
+| ----------------------------- | ------------------ |
+| `pydep init`                  | Create new project |
+| `pydep add <pkg>`             | Add dependency     |
+| `pydep remove <pkg>`          | Remove dependency  |
+| `pydep update <spec>`         | Update dependency  |
+| `pydep list [-D] [-G <x>]`    | List dependencies  |
+| `pydep install [-D] [-G <x>]` | Install all        |
+| `pydep lock [-D] [-G <x>]`    | Generate lock file |
+| `pydep build`                 | Build wheel/sdist  |
+| `pydep run <script>`          | Run custom script  |
+| `pydep audit`                 | Check for issues   |
+| `pydep security-audit`        | Scan for CVE       |
+| `pydep fix`                   | Fix conflicts      |
+| `pydep publish`               | Upload to PyPI     |
+
+**Shorthand flags:**
+
+- `-D` = `--save-dev` (dev dependencies)
+- `-G` = `--group` (optional groups)
+- `-g` = `--global` (use system Python)
+
+See [Full Reference](docs/CLI_REFERENCE.md) for all options and examples.
+
+---
+
+## Configuration
+
+All settings in `pyproject.toml`:
+
+```toml
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "My project"
+requires-python = ">=3.11"
+
+[tool.pydepm]
+type = "module"     # or "app"
+python-version = "3.11"
+
+[tool.pydepm.env]
+type = "venv"           # "venv", "conda", or "global"
+
+[tool.pydepm.scripts]
+test = "pytest -v"
+lint = "ruff check ."
+
+[project.dependencies]
+requests = ">=2.28.0"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "black"]
+docs = ["sphinx"]
+```
+
+See [Configuration Guide](docs/CONFIGURATION.md) for all options.
+
+---
+
+## Lock Files
+
+`pydepm.lock` stores exact versions:
+
+```toml
+[metadata]
+version = "1.0"
+created-at = "2024-04-04T10:30:00Z"
+python-version = "3.11"
+
+[resolved]
+requests = "2.31.0"
+urllib3 = "2.1.0"
+```
+
+Generate with: `pydep lock`
+
+---
+
+## Project Structure
+
+After `pydep init my_project`:
+
+```
+my_project/
+├── pyproject.toml
+├── .gitignore
+├── src/my_project/
+│   ├── __init__.py
+│   └── module.py
+├── tests/
+│   └── __init__.py
+└── .venv/
+```
+
+---
+
+## Common Usage
+
+### Create a Library
+
+```bash
+pydep init mylib --type module
+cd mylib
+pydep add requests
+pydep add pytest -D
+pydep build
+```
+
+### Create an Application
+
+```bash
+pydep init myapp --type app
+cd myapp
+pydep add click rich
+pydep build      # Creates executable via PyInstaller
+```
+
+### Manage Multiple Dependency Groups
+
+```bash
+pydep add sphinx -G docs
+pydep add pytest -G test
+pydep install -G test,docs
+```
+
+### Run in CI/CD
+
+```bash
+# Developer: lock versions
+pydep lock
+git add pydepm.lock
+
+# CI: install exact versions
+pydep install
+```
+
+---
+
+## Documentation
+
+| Document                                | Purpose              |
+| --------------------------------------- | -------------------- |
+| [CLI Reference](docs/CLI_REFERENCE.md)  | All commands & flags |
+| [Configuration](docs/CONFIGURATION.md)  | pyproject.toml spec  |
+| [Lock Format](docs/LOCK_FILE_FORMAT.md) | Lock file structure  |
+| [Architecture](docs/ARCHITECTURE.md)    | How it works         |
+| [Examples](docs/EXAMPLES.md)            | Real-world recipes   |
+| [Contributing](docs/CONTRIBUTING.md)    | Contribute to PyDepm |
+
+---
+
+## Custom Scripts
+
+Define scripts in `pyproject.toml`:
+
+```toml
+[tool.pydepm.scripts]
+test = "pytest -v"
+lint = "ruff check ."
+format = "black . && ruff --fix ."
+docs = "sphinx-build docs/ build/docs"
+```
+
+Run with:
+
+```bash
+pydep run test
+pydep run lint
+```
+
+---
+
+## Security
+
+```bash
+pydep audit              # Check for issues
+pydep security-audit     # Scan for CVE vulnerabilities
+pydep fix                # Fix conflicts
+pydep fix --force        # Aggressive fixing
+```
+
+---
+
+## 📦 Installation
+
+### From PyPI (Recommended)
+
+```bash
+pip install pydepm
+```
+
+### Development
+
+```bash
+git clone https://github.com/your-repo/pydepm.git
+cd pydepm
+pip install -e .
+```
+
+### Verify
+
+```bash
+python scripts/quick_validation.py
+```
+
+---
+
+## Why PyDepm?
+
+| Feature               | Poetry | Pipenv | Pydepm |
+| --------------------- | ------ | ------ | ------ |
+| Dependency management | ✅     | ✅     | ✅     |
+| Easy init             | ✅     | ❌     | ✅     |
+| Lock files            | ✅     | ✅     | ✅     |
+| App bundling          | ❌     | ❌     | ✅     |
+| Simple & fast         | ⚠️     | ⚠️     | ✅     |
+
+---
+
+## 🤝 Contributing
+
+Contributions welcome! See [Contributing Guide](docs/CONTRIBUTING.md).
+
+---
+
+## License
+
+MIT License — See [LICENSE](LICENSE)
+
+---
+
+** Ready?** Run: `pydep init my_first_project`

@@ -1,0 +1,358 @@
+[metadata]
+version = "1.0"
+created_at = ""
+created_by = "pydepm"
+python_version = "3.14"
+pyproject_hash = "9b9669497507b4aef680129d55ce11ddedd81809a04d9579430332f6378b316e"
+
+[dependencies.alabaster]
+version = "1.0.0"
+specifier = "==1.0.0"
+
+[dependencies.annotated-doc]
+version = "0.0.4"
+specifier = "==0.0.4"
+
+[dependencies.babel]
+version = "2.18.0"
+specifier = "==2.18.0"
+
+[dependencies.black]
+version = "26.3.1"
+specifier = "==26.3.1"
+
+[dependencies."boolean.py"]
+version = "5.0"
+specifier = "==5.0"
+
+[dependencies.build]
+version = "1.4.2"
+specifier = "==1.4.2"
+
+[dependencies.cachecontrol]
+version = "0.14.4"
+specifier = "==0.14.4"
+
+[dependencies.certifi]
+version = "2026.1.4"
+specifier = "==2026.1.4"
+
+[dependencies.charset-normalizer]
+version = "3.4.4"
+specifier = "==3.4.4"
+
+[dependencies.click]
+version = "8.3.1"
+specifier = "==8.3.1"
+
+[dependencies.colorama]
+version = "0.4.6"
+specifier = "==0.4.6"
+
+[dependencies.coverage]
+version = "7.13.5"
+specifier = "==7.13.5"
+
+[dependencies.cyclonedx-python-lib]
+version = "11.6.0"
+specifier = "==11.6.0"
+
+[dependencies.defusedxml]
+version = "0.7.1"
+specifier = "==0.7.1"
+
+[dependencies.docutils]
+version = "0.22.4"
+specifier = "==0.22.4"
+
+[dependencies.filelock]
+version = "3.20.3"
+specifier = "==3.20.3"
+
+[dependencies.id]
+version = "1.6.1"
+specifier = "==1.6.1"
+
+[dependencies.idna]
+version = "3.11"
+specifier = "==3.11"
+
+[dependencies.imagesize]
+version = "2.0.0"
+specifier = "==2.0.0"
+
+[dependencies.iniconfig]
+version = "2.3.0"
+specifier = "==2.3.0"
+
+[dependencies.isort]
+version = "8.0.1"
+specifier = "==8.0.1"
+
+[dependencies."jaraco.classes"]
+version = "3.4.0"
+specifier = "==3.4.0"
+
+[dependencies."jaraco.context"]
+version = "6.1.2"
+specifier = "==6.1.2"
+
+[dependencies."jaraco.functools"]
+version = "4.4.0"
+specifier = "==4.4.0"
+
+[dependencies.jinja2]
+version = "3.1.6"
+specifier = "==3.1.6"
+
+[dependencies.keyring]
+version = "25.7.0"
+specifier = "==25.7.0"
+
+[dependencies.librt]
+version = "0.8.1"
+specifier = "==0.8.1"
+
+[dependencies.license-expression]
+version = "30.4.4"
+specifier = "==30.4.4"
+
+[dependencies.markdown-it-py]
+version = "4.0.0"
+specifier = "==4.0.0"
+
+[dependencies.markupsafe]
+version = "3.0.3"
+specifier = "==3.0.3"
+
+[dependencies.mdit-py-plugins]
+version = "0.5.0"
+specifier = "==0.5.0"
+
+[dependencies.mdurl]
+version = "0.1.2"
+specifier = "==0.1.2"
+
+[dependencies.more-itertools]
+version = "11.0.1"
+specifier = "==11.0.1"
+
+[dependencies.msgpack]
+version = "1.1.2"
+specifier = "==1.1.2"
+
+[dependencies.mypy]
+version = "1.20.0"
+specifier = "==1.20.0"
+
+[dependencies.mypy-extensions]
+version = "1.1.0"
+specifier = "==1.1.0"
+
+[dependencies.myst-parser]
+version = "5.0.0"
+specifier = "==5.0.0"
+
+[dependencies.nh3]
+version = "0.3.4"
+specifier = "==0.3.4"
+
+[dependencies.packageurl-python]
+version = "0.17.6"
+specifier = "==0.17.6"
+
+[dependencies.packaging]
+version = "26.0"
+specifier = "==26.0"
+
+[dependencies.pathspec]
+version = "1.0.4"
+specifier = "==1.0.4"
+
+[dependencies.pip]
+version = "25.3"
+specifier = "==25.3"
+
+[dependencies.pip-api]
+version = "0.0.34"
+specifier = "==0.0.34"
+
+[dependencies.pip-audit]
+version = "2.10.0"
+specifier = "==2.10.0"
+
+[dependencies.pip-requirements-parser]
+version = "32.0.1"
+specifier = "==32.0.1"
+
+[dependencies.platformdirs]
+version = "4.5.1"
+specifier = "==4.5.1"
+
+[dependencies.pluggy]
+version = "1.6.0"
+specifier = "==1.6.0"
+
+[dependencies.prompt-toolkit]
+version = "3.0.52"
+specifier = "==3.0.52"
+
+[dependencies.py-serializable]
+version = "2.1.0"
+specifier = "==2.1.0"
+
+[dependencies.pydepm]
+version = "1.0.0"
+specifier = "==1.0.0"
+
+[dependencies.pygments]
+version = "2.19.2"
+specifier = "==2.19.2"
+
+[dependencies.pyparsing]
+version = "3.3.2"
+specifier = "==3.3.2"
+
+[dependencies.pyproject-hooks]
+version = "1.2.0"
+specifier = "==1.2.0"
+
+[dependencies.pytest]
+version = "9.0.2"
+specifier = "==9.0.2"
+
+[dependencies.pytest-asyncio]
+version = "1.4.0a0"
+specifier = "==1.4.0a0"
+
+[dependencies.pytest-cov]
+version = "7.1.0"
+specifier = "==7.1.0"
+
+[dependencies.pytest-mock]
+version = "3.15.1"
+specifier = "==3.15.1"
+
+[dependencies.pytokens]
+version = "0.4.1"
+specifier = "==0.4.1"
+
+[dependencies.pywin32-ctypes]
+version = "0.2.3"
+specifier = "==0.2.3"
+
+[dependencies.pyyaml]
+version = "6.0.3"
+specifier = "==6.0.3"
+
+[dependencies.questionary]
+version = "2.1.1"
+specifier = "==2.1.1"
+
+[dependencies.readme-renderer]
+version = "44.0"
+specifier = "==44.0"
+
+[dependencies.requests]
+version = "2.33.1"
+specifier = "==2.33.1"
+
+[dependencies.requests-toolbelt]
+version = "1.0.0"
+specifier = "==1.0.0"
+
+[dependencies.rfc3986]
+version = "2.0.0"
+specifier = "==2.0.0"
+
+[dependencies.rich]
+version = "14.3.3"
+specifier = "==14.3.3"
+
+[dependencies.roman-numerals]
+version = "4.1.0"
+specifier = "==4.1.0"
+
+[dependencies.ruff]
+version = "0.15.9"
+specifier = "==0.15.9"
+
+[dependencies.shellingham]
+version = "1.5.4"
+specifier = "==1.5.4"
+
+[dependencies.snowballstemmer]
+version = "3.0.1"
+specifier = "==3.0.1"
+
+[dependencies.sortedcontainers]
+version = "2.4.0"
+specifier = "==2.4.0"
+
+[dependencies.sphinx]
+version = "9.1.0"
+specifier = "==9.1.0"
+
+[dependencies.sphinx-rtd-theme]
+version = "3.1.0"
+specifier = "==3.1.0"
+
+[dependencies.sphinxcontrib-applehelp]
+version = "2.0.0"
+specifier = "==2.0.0"
+
+[dependencies.sphinxcontrib-devhelp]
+version = "2.0.0"
+specifier = "==2.0.0"
+
+[dependencies.sphinxcontrib-htmlhelp]
+version = "2.1.0"
+specifier = "==2.1.0"
+
+[dependencies.sphinxcontrib-jquery]
+version = "4.1"
+specifier = "==4.1"
+
+[dependencies.sphinxcontrib-jsmath]
+version = "1.0.1"
+specifier = "==1.0.1"
+
+[dependencies.sphinxcontrib-qthelp]
+version = "2.0.0"
+specifier = "==2.0.0"
+
+[dependencies.sphinxcontrib-serializinghtml]
+version = "2.0.0"
+specifier = "==2.0.0"
+
+[dependencies.tomli]
+version = "2.4.0"
+specifier = "==2.4.0"
+
+[dependencies.tomli-w]
+version = "1.2.0"
+specifier = "==1.2.0"
+
+[dependencies.tomlkit]
+version = "0.14.0"
+specifier = "==0.14.0"
+
+[dependencies.twine]
+version = "6.2.0"
+specifier = "==6.2.0"
+
+[dependencies.typer]
+version = "0.24.1"
+specifier = "==0.24.1"
+
+[dependencies.typing-extensions]
+version = "4.15.0"
+specifier = "==4.15.0"
+
+[dependencies.urllib3]
+version = "2.6.3"
+specifier = "==2.6.3"
+
+[dependencies.wcwidth]
+version = "0.6.0"
+specifier = "==0.6.0"
