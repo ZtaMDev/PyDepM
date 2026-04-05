@@ -1,6 +1,16 @@
-# PyDepm - Python Dependencies & Projects Manager
+<h1 align="center">PyDepM</h1>
 
-Simple, fast, and modern Python project manager. Initialize projects, manage dependencies, build distributions, and publish to PyPI—all from one command.
+<p align="center">
+  <strong>Simple, fast, and modern Python project manager.</strong><br/>
+  Initialize projects, manage dependencies, build distributions, and publish to PyPI—all from one command.
+</p>
+
+<div algin ="center">
+
+[![PyPI version](https://img.shields.io/pypi/v/pydepm.svg)](https://pypi.org/project/pydepm/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+</div>
 
 ---
 
