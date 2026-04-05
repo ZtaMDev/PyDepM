@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+
+  <!-- Nodos -->
+  <circle cx="160" cy="160" r="20" fill="#2e7d32"/>
+  <circle cx="340" cy="160" r="20" fill="#2e7d32"/>
+  <circle cx="250" cy="380" r="20" fill="#2e7d32"/>
+
+  <!-- Centro -->
+  <circle cx="250" cy="250" r="28" fill="#66bb6a" stroke="#1b5e20" stroke-width="4"/>
+
+  <!-- Conexiones -->
+  <path d="M160 160h180M160 160L250 380M340 160L250 380"
+        stroke="#2e7d32" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Líneas punteadas -->
+  <path d="M160 160L250 250M340 160L250 250M250 380V250"
+        stroke="#2e7d32" stroke-width="5" stroke-dasharray="8,6" stroke-linecap="round"/>
+
+</svg>

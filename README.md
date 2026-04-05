@@ -1,16 +1,28 @@
 <h1 align="center">PyDepM</h1>
 
 <p align="center">
+  <img src="./pydepm.svg" alt="PydepM Logo" width="300" />
+</p>
+
+<p align="center">
   <strong>Simple, fast, and modern Python project manager.</strong><br/>
   Initialize projects, manage dependencies, build distributions, and publish to PyPI—all from one command.
 </p>
 
-<div algin ="center">
-
-[![PyPI version](https://img.shields.io/pypi/v/pydepm.svg)](https://pypi.org/project/pydepm/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-</div>
+<p align="center">
+  <a href="https://pypi.org/project/pydepm/">
+    <img src="https://img.shields.io/pypi/v/pydepm.svg" alt="PyPI version" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" />
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/python-3.11+-blue.svg" alt="Python 3.11+" />
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/status-beta-orange.svg" alt="Status: Beta" />
+  </a>
+</p>
 
 ---
 
